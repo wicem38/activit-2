@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6">
+      <h2>Posts</h2>
+      <ul>
+        <app-post-listcomponent  *ngFor="let appareil of posts"
+                       [title]="appareil.title"
+                       [content]="appareil.content"></app-post-listcomponent>
+      </ul>
+
+    </div>
+  </div>
+</div>

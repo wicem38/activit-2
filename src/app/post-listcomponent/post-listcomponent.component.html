@@ -1,0 +1,26 @@
+<div class="container">
+        <div class="row">
+          <div class="col-xs-6 serve">
+                
+         <div [ngClass]="{'list-group-item': true,
+        'list-group-item-success': LoveIts > 0,
+        'list-group-item-danger': LoveIts < 0}">
+  <div class="row">
+  <div class="col-xs-4">
+   {{ title }} </div>
+   <div class="col-xs-offset-4 col-xs-4">
+    {{ lastUpdate | date: 'short' }}
+</div>
+</div>
+  <h6>{{ content }} </h6>
+  <button class="btn btn-success"
+          (click)="numberLove()">loveit</button>
+  <button class="btn btn-success"
+          (click)="Dontlove()">Dont loveit</button>
+
+  </div>
+  
+</div>
+</div>
+</div>
+
